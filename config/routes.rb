@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  devise_for :users, :path_names => { :sign_up => "register" }
   #root to: "users"
   #resources :users
   # get "users"
